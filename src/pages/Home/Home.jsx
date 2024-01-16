@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
 import UpcomingEventImg from '../../utils/images/upcoming-event-img.jpeg';
 import { Card } from 'react-bootstrap';
 import Event1Img from '../../utils/images/past-event1-img.jpeg';
+
 
 const events = [
     {
@@ -21,6 +22,9 @@ const events = [
 ];
 
 function Home() {
+    useEffect(()=>{
+        document.title="Home | IIEST ETC DEPT";
+    },[]);
   return (
     <div className='home-page'>
         <header className='h-100 min-vh-100 d-flex align-items-center text-light'>
@@ -28,7 +32,7 @@ function Home() {
                 <h2>Welcome To</h2>
                 <br></br>
                 <br></br>
-                <h1 className='text-center fw-semibold'>Department of Electronics and Telecommunication</h1>
+                <h1 className='text-center fw-semibold spldesign'>Department of Electronics and Telecommunication</h1>
                 <p className='text-center w-75 mb-5'>Aspire to become one of the Leading Departments of this Country with International Repute in the broad domain of Electrical Sciences and Technology through the development of Professional Attitude, Analytical and Innovative Mindsets, and Operational Expertise in the field of Electronics and Tele-Communication Engineering.</p>
                 <div className='d-flex flex-column flex-sm-row align-items-center'>
                     <Link to="/contact">

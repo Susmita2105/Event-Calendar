@@ -8,8 +8,9 @@ import About from './pages/About/About';
 import Event from './pages/Event/Event';
 import Contact from './pages/Contact/Contact';
 import ASETE from './utils/svg/asete.svg';
-
+import GoToTop from './pages/GoToTop';
 function App() {
+  
   return (
     <div>
       <Navbar expand="lg" className='position-absolute w-100'>
@@ -37,14 +38,14 @@ function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
+      
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/event' element={<Event />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
-
+       <GoToTop />
       <footer>
         <div className='container my-5'>
           <div className='row d-flex justify-content-between align-items-center'>

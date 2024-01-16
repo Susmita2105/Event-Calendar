@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './Event.css';
 import { Link } from 'react-router-dom';
 import { Card } from 'react-bootstrap';
@@ -21,6 +21,9 @@ const events = [
 ];
 
 function Event() {
+    useEffect(()=>{
+        document.title="Events | IIEST ETC DEPT";
+    },[]);
   return (
     <div className='blog-page'>
         <header className='height-75'>

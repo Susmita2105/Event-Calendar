@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './About.css';
 import { Link } from 'react-router-dom';
 import AboutUsSectionImg from '../../utils/images/about-us-section-img.jpg';
@@ -8,6 +8,9 @@ import Lab2 from '../../utils/images/Lab2.jpg';
 import Lab3 from '../../utils/images/Lab3.jpg';
 
 function About() {
+    useEffect(()=>{
+        document.title="About Us | IIEST ETC DEPT";
+    },[]);
     return (
         <div className='about-page'>
             <header className='height-75'>

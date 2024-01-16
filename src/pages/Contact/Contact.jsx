@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './Contact.css';
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
@@ -6,6 +6,9 @@ import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 
 function Contact() {
+    useEffect(()=>{
+        document.title="Contact Us | IIEST ETC DEPT";
+    },[]);
   return (
     <div className='contact-page'>
         <header className='height-75'>
