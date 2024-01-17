@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { FaArrowUp } from "react-icons/fa";
 
 const GoToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
