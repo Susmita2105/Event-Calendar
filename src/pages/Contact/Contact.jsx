@@ -21,9 +21,9 @@ function Contact() {
     
         emailjs.sendForm('service_wjylyjl', 'template_bdqe7i9', form.current, 'dsnkp_kZNwC_T6RTG')
           .then((result) => {
-              {notify("We have received your message !✌️")}
+              notify("We have received your message !✌️")
           }, (error) => {
-            {notify("Oops !!! some error occured while sending your message 😔")}
+            notify("Oops !!! some error occured while sending your message 😔")
           });
         };
       
